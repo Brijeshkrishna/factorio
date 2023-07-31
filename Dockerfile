@@ -6,7 +6,8 @@ WORKDIR /app
 
 COPY . /app
 
-RUN wget -O - https://factorio.com/get-download/1.1.87/headless/linux64 | tar -xz
+RUN wget https://factorio.com/get-download/1.1.87/headless/linux64 
+RUN tar -xJf factorio_headless_x64_1.1.87.tar.xz
 
 RUN chmod 777 /app -R
 
