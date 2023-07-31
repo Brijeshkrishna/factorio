@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt update && apt install wget -y
+RUN apt-get update && apt-get install wget xz-utils -y
 
 WORKDIR /app
 
