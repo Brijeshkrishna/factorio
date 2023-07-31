@@ -13,4 +13,4 @@ RUN chmod 777 /factorio -R
 RUN "pwd"
 RUN "ls"
 
-CMD "./factorio/bin/x64/factorio --start-server ./dd.zip --port 7860" 
+CMD "/factorio/bin/x64/factorio --start-server" 
