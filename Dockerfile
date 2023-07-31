@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+RUN apt update && apt install wget -y
+
 WORKDIR /app
 
 COPY . /app
