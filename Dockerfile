@@ -11,4 +11,4 @@ RUN tar -xJf factorio_headless_x64_1.1.87.tar.xz
 
 RUN chmod 777 /app -R
 RUN "ls;pwd;tree -d 4"
-CMD "./factorio/bin/x64/factorio --start-server ./dd.zip --port 7860" 
+CMD "/app/factorio/bin/x64/factorio --start-server /app/dd.zip --port 7860" 
