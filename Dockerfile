@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN curl -L https://factorio.com/get-download/1.1.87/headless/linux64 | tar -xz
+RUN wget -O - https://factorio.com/get-download/1.1.87/headless/linux64 | tar -xz
 
 RUN chmod 777 /app -R
 
